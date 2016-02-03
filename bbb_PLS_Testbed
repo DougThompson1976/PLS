@@ -1,0 +1,37 @@
+MAL Step	MAL Tests			
+-1	";;Tests Cell Formulas - to leveral MAL test suite, modified for PicoLisp via emuLisp"			
+	";; Note: Cell formulas can be ""dragged down""  ""Superman Fan"" style and then ""blanked out"" for a cascading visual effect"			
+				
+	Input Test Text ->abcABC123			
+		=PLS(B3)		
+	Expected Value ->;=>abcABC123			
+			"=MID(B5,4,LEN(B12))"	
+				"=IF(C4=D6, 0, 1)"
+				
+0	;; Testing basic string			
+	abcABC123			
+		abcABC123		
+	;=>abcABC123			
+			abcABC123	
+				0
+	;; Testing string containing spaces			
+	hello mal world			
+		hello mal world		
+	;=>hello mal world			
+			hello mal world	
+				0
+	;; Testing string containing symbols			
+	"[]{}""'* ;:()"			
+		"[]{}""'* ;:()"		
+	";=>[]{}""'* ;:()"			
+			"[]{}""'* ;:()"	
+				0
+				
+	;; Test long string			
+	"hello world abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 (;:() []{}""'* ;:() []{}""'* ;:() []{}""'*)"			
+		"hello world abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 (;:() []{}""'* ;:() []{}""'* ;:() []{}""'*)"		
+	";=>hello world abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 (;:() []{}""'* ;:() []{}""'* ;:() []{}""'*)"			
+			"hello world abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789 (;:() []{}""'* ;:() []{}""'* ;:() []{}""'*)"	
+				0
+				
+1				
