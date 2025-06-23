@@ -4,7 +4,7 @@ Persistent Logic System
      - Built on the Rule of Three
 
 3 Core ideas (recursive) 
-   -   Built on mal (Make  LISP)
+   -   Built on mal (Make a LISP - Clojure based)
    -   Zachaman Architecuture
    -      (BEDFCA) - BED Floating in CAlifornia
 
