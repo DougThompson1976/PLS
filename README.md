@@ -5,6 +5,7 @@ Persistent Logic System
 
 3 Core ideas (recursive) 
    -   Built on mal (Make a LISP - Clojure based)
+           ( low level Turing machine programming language)
    -   Zachaman Architecuture
    -      (BEDFCA) - BED Floating in CAlifornia
 
